@@ -2,18 +2,25 @@
 
 
 intersection() {
-	linear_extrude(height = 2) {
-		import(file = "mera_v02_10_best.svg", origin = [0, 0]);
-	}
-	translate(v = [30, 190, 0]) {
-		difference() {
-			translate(v = [-10.0000000000, -10.0000000000, -2]) {
-				cube(size = [170, 170, 20]);
+	difference() {
+		linear_extrude(height = 14) {
+			import(file = "mera_v02_14_best.svg", origin = [0, 0]);
+		}
+		union() {
+			translate(v = [0, 0, 6]) {
+				linear_extrude(height = 9) {
+					import(file = "mera_v02_10_best.svg", origin = [0, 0]);
+				}
 			}
-			translate(v = [10.0000000000, 10.0000000000, -4]) {
-				cube(size = [130, 130, 26]);
+			translate(v = [0, 0, -1]) {
+				linear_extrude(height = 4) {
+					import(file = "mera_v02_10_best.svg", origin = [0, 0]);
+				}
 			}
 		}
+	}
+	translate(v = [180, 190, 0]) {
+		cube(size = [150, 150, 20]);
 	}
 }
 /***********************************************

@@ -5,7 +5,7 @@ intersection() {
 	linear_extrude(height = 2) {
 		import(file = "mera_v02_10_best.svg", origin = [0, 0]);
 	}
-	translate(v = [30, 190, 0]) {
+	translate(v = [330, 190, 0]) {
 		difference() {
 			translate(v = [-10.0000000000, -10.0000000000, -2]) {
 				cube(size = [170, 170, 20]);

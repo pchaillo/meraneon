@@ -18,8 +18,8 @@ scad_name = "figure_split_auto"
 taille_fig_x = 400 # taille de la figure à imprimer
 taille_fig_y = 450
 
-taille_plat_x = 210 # en mm
-taille_plat_y = 210
+taille_plat_x = 150 # en mm
+taille_plat_y = 150
 
 trans_e = 20 # taille de la transition
 
